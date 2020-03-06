@@ -13,10 +13,7 @@ React.render(
 // Under, with JSX Syntax.
 var HelloWorld = React.createClass({
   render:  function(){
-    return (
-      <h1>Hello Developer</h1>,
-      <h1>From React 0.12.2</h1>
-    );
+    return (<h1>Hello</h1>);
   }
 });
 React.render(<HelloWorld />, document.getElementById('root'));
