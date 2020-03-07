@@ -34,7 +34,7 @@ var Login = React.createClass({ // form component in progress, not done.
       }else {console.log("Cant Enter to this page")};
     }
     return (
-      <div id="login">
+      <form id="login">
 
           <label for="username">User: </label>
           <input id="username" type="text" placeholder=" username"/>
@@ -44,7 +44,7 @@ var Login = React.createClass({ // form component in progress, not done.
           <br/>
           <button onClick={enter}>Submit</button>
 
-      </div>
+      </form>
     )
   }
 });
@@ -52,18 +52,12 @@ var Login = React.createClass({ // form component in progress, not done.
 // *===== Main Component =====*
  var HelloWorld = React.createClass({
   render: function(){
-    function color(){
-      document.getElementById('content').style.backgroundColor = "pink";
-      document.querySelector('h2').textContent = "Hello Pink";
-    }
     return (
       <div id="content">
         <div><Clock/></div>
         <h1>React: <span id="ver">0.12.2</span> - By <Author author="Petter Lopez"/></h1>
         <hr/>
-        <Login/>
-        <button onClick={color}>Pink</button>
-        <h2></h2>
+        <Login />
       </div>
     );
   }

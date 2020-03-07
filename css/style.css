@@ -1,5 +1,5 @@
 body{
-    background-color: #05343d;
+    background-color: #3a5072;
 }
 #content{
   width: 90%;
@@ -10,7 +10,29 @@ body{
   margin: 20px auto;
   background-color: white;
   color: gray;
-
+}
+#login{
+  font-size: 2em;
+  width: 500px;
+  margin: 25px auto;
+  text-align: right;
+}
+#login input, #login button{
+  margin-right: 40%;
+  margin-top: 20px;
+}
+#login input{
+  border-radius: 3px;
+}
+#login button{
+  background-color: #3a5072;
+  color: white;
+  border-radius:5px;
+  font-size: 16px;
+  padding: 2px 5px;
+}
+#login button:hover{
+  border: 2px solid #f95252;
 }
 #ver{
   color: #ff4c50;
