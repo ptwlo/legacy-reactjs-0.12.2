@@ -1,4 +1,17 @@
 body{
     background-color: #05343d;
-    color: white;
+}
+#content{
+  width: 90%;
+  min-width: 600px;
+  height: 720px;
+  padding: 25px;
+  border-radius: 5px;
+  margin: 20px auto;
+  background-color: white;
+  color: gray;
+
+}
+#ver{
+  color: #ff4c50;
 }
