@@ -10,7 +10,7 @@ React.render(
 );
 */
 
-// Under, with JSX Syntax.
+// Below, with JSX Syntax.
 var Clock = React.createClass({
   render: ()=>{
     var time = new Date();
@@ -26,16 +26,12 @@ var Author = React.createClass({
 var Login = React.createClass({ // form component in progress, not done.
   render: ()=>{
     function enter(){
-      var name = document.getElementById('username').value;
+      var tname = document.getElementById('username').value;
       var pass = document.getElementById('password').value;
-
-      if(name == "petter" && pass == "8991"){
-        console.log("Welcome to my page "+ name);
-      }else {console.log("Cant Enter to this page")};
+      console.log(tname);
     }
     return (
-      <form id="login">
-
+      <div id="login"> // wont be using a form element till I connect it to a DataBase.
           <label for="username">User: </label>
           <input id="username" type="text" placeholder=" username"/>
           <br/>
@@ -43,8 +39,7 @@ var Login = React.createClass({ // form component in progress, not done.
           <input id="password" type="password"/>
           <br/>
           <button onClick={enter}>Submit</button>
-
-      </form>
+      </div>
     )
   }
 });
@@ -54,7 +49,7 @@ var Login = React.createClass({ // form component in progress, not done.
   render: function(){
     return (
       <div id="content">
-        <div><Clock/></div>
+        <div><Clock /></div>
         <h1>React: <span id="ver">0.12.2</span> - By <Author author="Petter Lopez"/></h1>
         <hr/>
         <Login />
